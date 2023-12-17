@@ -356,7 +356,7 @@ main {
 	}
 
 	.catalog__item {
-		transition: 0.4s ease opacity;
+		transition: 0.4s ease all;
 
 		& img {
 			max-width: 100%;
@@ -364,6 +364,7 @@ main {
 
 		&:hover {
 			opacity: 0.6;
+			transform: scale(1.05);
 		}
 	}
 
@@ -455,13 +456,56 @@ main {
 
 .video {}
 
-.video__container {}
+.video__container {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.video__container div {
+	flex: 1 1 32%;
+}
 
 .video__container video {
 	max-width: 100%;
+	width: 100%;
 }
 
 /* -------- Video -------- */
+
+/* -------- Types -------- */
+
+.types {
+	margin-top: 100px;
+}
+
+.types__container {}
+
+.types__title {
+	font-size: clamp(50px, 5vw, 80px);
+	line-height: 120%;
+	margin-bottom: 50px;
+}
+
+.types__list {
+	margin-left: 50px;
+}
+
+.types__list > ul {
+	margin-left: 20px;
+	list-style: disc;
+}
+
+.types__list li {
+	list-style: disc;
+}
+
+.types__list li ul {
+	padding: 10px;
+	margin-left: 20px;
+}
+
+/* -------- Types -------- */
 
 /* -------- Subscribe -------- */
 
@@ -474,7 +518,7 @@ main {
 	} */
 
 	.subscribe__title {
-		color: black;
+		color: #fff;
 		font-size: clamp(38px, 5vw, 80px);
 		line-height: 120%;
 		text-transform: capitalize;
@@ -604,10 +648,12 @@ main {
 
 .social__link {
 	font-size: 30px;
-	transition: 0.2s ease opacity;
+	transition: 0.2s ease all;
+	position: relative;
 
 	&:hover {
 		opacity: 0.7;
+		font-size: 32px;
 	}
 }
 
