@@ -518,7 +518,7 @@ main {
 	} */
 
 	.subscribe__title {
-		color: #fff;
+		color: black;
 		font-size: clamp(38px, 5vw, 80px);
 		line-height: 120%;
 		text-transform: capitalize;
