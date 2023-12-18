@@ -1,0 +1,24 @@
+.hero,
+.table {
+   margin-bottom: 100px;
+}
+
+.table div {
+   margin-bottom: 50px;
+}
+
+table,
+tr,
+td,
+caption {
+   border-collapse: collapse;
+   border: 1px solid #000;
+}
+
+caption {
+   background-color: burlywood;
+}
+
+td {
+   padding: 10px;
+}
